@@ -1,0 +1,14 @@
+[package]
+name = "audit-cli"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+audit-core = { path = "../core" }
+clap = { version = "4.4", features = ["derive"] }
+tokio = { version = "1", features = ["full"] }
+dotenvy = "0.15"
+anyhow = "1.0"
+serde_json = "1.0.145"
+env_logger = "0.11.8"
+log = "0.4.29"
